@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food App</title>
+    <script type="module" src="index.js"></script>
+    <style>
+      #navbar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: teal;
+        font-size: large;
+        height: 40px;
+        color: white;
+        text-align: center;
+      }
+      #recipeSearch {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .left,
+      .right,
+      .mid {
+        margin-top: 10px;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      .imgDiv {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .foods {
+        text-align: center;
+        font-family: cursive;
+        margin-top: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar_container"></div>
+
+    <div id="recipeSearch">
+      <input type="text" id="search" />
+      <button id="recipe">Search</button>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>
